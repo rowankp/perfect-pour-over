@@ -1,0 +1,24 @@
+CREATE TABLE TemperatureData
+(
+	RunId INTEGER NOT NULL PRIMARY KEY,
+	BrewDate TEXT
+);
+
+CREATE TABLE AcidityData
+(
+	RunId INTEGER NOT NULL PRIMARY KEY,
+	BrewDate TEXT
+);
+
+CREATE TABLE StaticData 
+(
+	RunId INTEGER NOT NULL PRIMARY KEY,
+	BrewDate TEXT,
+	Region TEXT,
+	Roast INTEGER,
+	Age INTEGER,
+	Grind INTEGER,
+	Water REAL,
+	Dosage REAL,
+	BrewTime INTEGER
+);
