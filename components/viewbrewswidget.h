@@ -1,11 +1,13 @@
 #ifndef VIEWBREWSWIDGET_H
 #define VIEWBREWSWIDGET_H
 
+#include "brewdatastructure.h"
+#include "components/averagesview.h"
+#include "components/individualview.h"
+#include "components/viewbutton.h"
+
 #include <QWidget>
 #include <QtCharts>
-
-#include "brewdatastructure.h"
-#include "components/viewbutton.h"
 
 namespace Ui { class ViewBrewsWidget; }
 
@@ -22,7 +24,7 @@ class ViewBrewsWidget : public QWidget
         void showAverage(VIEW type);
 
     private:
-        Ui::ViewBrewsWidget *ui;
+        Ui::ViewBrewsWidget *_ui;
 };
 
 #endif // VIEWBREWSWIDGET_H
