@@ -15,8 +15,10 @@ SOURCES += \
     charts/livechart.cpp \
     charts/phchart.cpp \
     charts/temperaturechart.cpp \
+    components/averagesview.cpp \
     components/brewtimer.cpp \
     components/glossarywidget.cpp \
+    components/individualview.cpp \
     components/newbrewwidget.cpp \
     components/roastslider.cpp \
     components/tastingwheelwidget.cpp \
@@ -31,8 +33,10 @@ HEADERS += \
     charts/livechart.h \
     charts/phchart.h \
     charts/temperaturechart.h \
+    components/averagesview.h \
     components/brewtimer.h \
     components/glossarywidget.h \
+    components/individualview.h \
     components/newbrewwidget.h \
     components/roastslider.h \
     components/tastingwheelwidget.h \
@@ -42,7 +46,9 @@ HEADERS += \
     simulation/dummydata.h
 
 FORMS += \
+    components/averagesview.ui \
     components/glossarywidget.ui \
+    components/individualview.ui \
     components/newbrewwidget.ui \
     components/tastingwheelwidget.ui \
     components/viewbrewswidget.ui \

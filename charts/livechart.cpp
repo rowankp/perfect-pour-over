@@ -17,8 +17,8 @@ LiveChart::LiveChart(QChart *parent) : QChart(parent)
     _y_temp.setLabelFormat("%i");
 
     this->addAxis(&_x, Qt::AlignBottom);
-    this->addAxis(&_y_pH, Qt::AlignLeft);
-    this->addAxis(&_y_temp, Qt::AlignRight);
+    this->addAxis(&_y_pH, Qt::AlignRight);
+    this->addAxis(&_y_temp, Qt::AlignLeft);
     this->addSeries(&_data_pH);
     this->addSeries(&_data_temp);
 
