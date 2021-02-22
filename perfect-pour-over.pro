@@ -23,6 +23,7 @@ SOURCES += \
     components/roastslider.cpp \
     components/tastingwheelwidget.cpp \
     components/viewbrewswidget.cpp \
+    components/viewbutton.cpp \
     database/databasemanager.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
     components/roastslider.h \
     components/tastingwheelwidget.h \
     components/viewbrewswidget.h \
+    components/viewbutton.h \
     database/databasemanager.h \
     mainwindow.h \
     simulation/dummydata.h

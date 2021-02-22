@@ -27,4 +27,10 @@ struct BrewData
     QString brew_time = "NULL";
 };
 
+enum VIEW
+{
+    Rating, Roast, Region, Temperature, Acidity, Dosage, Time
+
+};
+
 #endif // BREWDATASTRUCTURE_H

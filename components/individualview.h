@@ -2,10 +2,9 @@
 #define INDIVIDUALVIEW_H
 
 #include <QWidget>
+#include <QtCharts>
 
-namespace Ui {
-class IndividualView;
-}
+namespace Ui { class IndividualView; }
 
 class IndividualView : public QWidget
 {

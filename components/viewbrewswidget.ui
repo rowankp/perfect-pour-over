@@ -55,7 +55,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_ratings">
+       <widget class="ViewButton" name="button_ratings">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -74,7 +74,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_roasts">
+       <widget class="ViewButton" name="button_roasts">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -93,7 +93,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_regions">
+       <widget class="ViewButton" name="button_regions">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -112,7 +112,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_temperature">
+       <widget class="ViewButton" name="button_temperature">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -131,7 +131,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_acidity">
+       <widget class="ViewButton" name="button_acidity">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -150,7 +150,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_dosages">
+       <widget class="ViewButton" name="button_dosages">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -169,7 +169,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="button_times">
+       <widget class="ViewButton" name="button_times">
         <property name="minimumSize">
          <size>
           <width>245</width>
@@ -235,6 +235,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ViewButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">components/viewbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
