@@ -21,7 +21,7 @@ class BrewSuggestion
         QString time(double t);
         QString temperature(double t);
         QString acidity(double pH);
-
+        QString summary();
         static BrewSuggestion &suggestion() { static BrewSuggestion b; return b; }
 
     private:
@@ -30,8 +30,10 @@ class BrewSuggestion
         int _age = 0;
         int _grind = 0;
         int _time = 0;
-        int _temperature = 0;
-        int _pH = 0;
+        QString _temperature = "0°F";
+        int _temperatureFlag = 0;
+        QString _ph = "0";
+        int _phFlag = 0;
         QString _ratio = "0:0";
         int _ratioFlag = 0;
 };

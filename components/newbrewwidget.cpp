@@ -169,7 +169,7 @@ void NewBrewWidget::save()
     _data.region = _ui->comboBox_region->currentText();
     _data.roast = _ui->slider_roast->value();
     _data.water = _ui->spinBox_water->value();
-
+    _data.rating = _ui->slider_rating->value();
     DatabaseManager::database().updateRecord(_data);
 }
 
@@ -184,6 +184,7 @@ void NewBrewWidget::clear()
     _ui->comboBox_water->setCurrentIndex(0);
     _ui->spinBox_dosage->setValue(0);
     _ui->comboBox_dosage->setCurrentIndex(0);
+    _ui->slider_rating->setValue(0);
 }
 
 void NewBrewWidget::buildSuggestions()
@@ -194,4 +195,5 @@ void NewBrewWidget::buildSuggestions()
     _ui->label_suggestion_timeInput->setText(BrewSuggestion::suggestion().time(_data.elapsed));
     _ui->label_suggestion_tempInput->setText(BrewSuggestion::suggestion().temperature(_data.temperature.back()));
     _ui->label_suggestion_pHInput->setText(BrewSuggestion::suggestion().acidity(_data.pH.back()));
+    _ui->text_suggestions->setPlainText(BrewSuggestion::suggestion().summary());
 }
