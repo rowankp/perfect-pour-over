@@ -42,3 +42,9 @@ void LiveChart::updateChart(int time, double pH, double temperature)
     _data_pH.append(time, pH);
     _data_temp.append(time, temperature);
 }
+
+void LiveChart::clear()
+{
+    _data_pH.clear();
+    _data_temp.clear();
+}

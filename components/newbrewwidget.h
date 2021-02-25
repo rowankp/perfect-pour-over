@@ -1,13 +1,13 @@
 #ifndef NEWBREWWIDGET_H
 #define NEWBREWWIDGET_H
 
-#include "brewdatastructure.h"
+#include "global.h"
 #include "charts/livechart.h"
 #include "charts/phchart.h"
 #include "charts/temperaturechart.h"
 #include "components/brewtimer.h"
 #include "components/roastslider.h"
-#include "database/databasemanager.h"
+#include "database/brewsuggestion.h"
 #include "simulation/dummydata.h"
 
 #include <QWidget>
@@ -23,15 +23,16 @@ class NewBrewWidget : public QWidget
         ~NewBrewWidget();
 
     public slots:
+        void storeRating(int value);
         void storeRegion(QString region);
         void storeRoastlevel(int level);
         void storeBeanAge(int age = 0);
-        void updateBeanAge(QString units);
+        void updateBeanAgeUnits(QString units);
         void storeGrindLevel(int level);
         void storeWater(double water = 0);
-        void updateWater(QString units);
+        void updateWaterUnits(QString units);
         void storeDosage(double dosage = 0);
-        void updateDosage(QString units);
+        void updateDosageUnits(QString units);
         void pushBackTemperature(double temperature);
         void pushBackAcidity(double pH);
         void updateTotals(int time_elapsed);
@@ -41,9 +42,10 @@ class NewBrewWidget : public QWidget
         void clear();
 
     private:
+        void buildSuggestions();
+
         Ui::NewBrewWidget *_ui;
         BrewData _data;
-        DatabaseManager _database;
         pHChart _pHChart;
         TemperatureChart _tempChart;
         LiveChart _liveChart;

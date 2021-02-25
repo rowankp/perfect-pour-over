@@ -38,3 +38,8 @@ void TemperatureChart::updateChart(int time, double value)
     _data.append(time, value);
 }
 
+void TemperatureChart::clear()
+{
+    _data.clear();
+}
+

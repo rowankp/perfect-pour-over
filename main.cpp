@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "mainwindow.h"
+#include "global.h"
 
 #include <QApplication>
 

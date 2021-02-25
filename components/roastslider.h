@@ -1,7 +1,8 @@
 #ifndef ROASTSLIDER_H
 #define ROASTSLIDER_H
 
-#include "brewdatastructure.h"
+#include "global.h"
+
 #include <QSlider>
 
 class RoastSlider : public QSlider

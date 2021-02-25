@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>572</width>
-    <height>618</height>
+    <width>573</width>
+    <height>669</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -211,27 +211,7 @@
       <attribute name="title">
        <string>Notes</string>
       </attribute>
-      <layout class="QVBoxLayout" name="layout_notes">
-       <item>
-        <widget class="QLabel" name="label_brewingNotes">
-         <property name="text">
-          <string>Brewing Notes</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTextEdit" name="textEdit_brewingNotes"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_tastingNotes">
-         <property name="text">
-          <string>Tasting Notes</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTextEdit" name="textEdit_tastingNotes"/>
-       </item>
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <layout class="QHBoxLayout" name="layout_rating">
          <item>
@@ -265,6 +245,187 @@
          </item>
         </layout>
        </item>
+       <item>
+        <widget class="QLabel" name="label_brewingNotes">
+         <property name="text">
+          <string>Brewing Notes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit_brewingNotes">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_tastingNotes">
+         <property name="text">
+          <string>Tasting Notes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit_tastingNotes">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Suggestions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame_suggestions">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_suggestion_age">
+              <property name="text">
+               <string>Age:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_suggestion_ageInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_suggestion_grind">
+              <property name="text">
+               <string>Grind:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label_suggestion_grindInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_suggestion_ratio">
+              <property name="text">
+               <string>Brew Ratio:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_suggestion_time">
+              <property name="text">
+               <string>Brew Time:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_suggestion_timeInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_suggestion_temp">
+              <property name="text">
+               <string>Temperature:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_suggestion_tempInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_suggestion_pH">
+              <property name="text">
+               <string>Acidity:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_suggestion_pHInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_suggestion_ratioInput">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_suggestions">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </widget>
     </widget>
@@ -293,81 +454,6 @@
       <property name="verticalSpacing">
        <number>6</number>
       </property>
-      <item row="2" column="1">
-       <widget class="QSpinBox" name="spinBox_age">
-        <property name="specialValueText">
-         <string notr="true"/>
-        </property>
-        <property name="correctionMode">
-         <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_dosage">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Dosage</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_roast">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Roast Level</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_age">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Bean Age</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="label_water">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Water</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_grind">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Grind Level</string>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="2">
        <widget class="QComboBox" name="comboBox_age">
         <property name="sizePolicy">
@@ -393,8 +479,18 @@
         </item>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="QDoubleSpinBox" name="spinBox_dosage"/>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_roast">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Roast Level</string>
+        </property>
+       </widget>
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="label_region">
@@ -409,117 +505,16 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="2">
-       <widget class="QComboBox" name="comboBox_dosage">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_grind">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <item>
-         <property name="text">
-          <string>g</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>ml</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QDoubleSpinBox" name="spinBox_water"/>
-      </item>
-      <item row="5" column="2">
-       <widget class="QComboBox" name="comboBox_water">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <item>
-         <property name="text">
-          <string>g</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>ml</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item row="0" column="1" colspan="2">
-       <widget class="QComboBox" name="comboBox_region">
-        <item>
-         <property name="text">
-          <string>Blend</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Brazil</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Colombia</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Costa Rica</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Ethiopia</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Hawaii</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Indonesia</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Kenya</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Mexico</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Papua New Guinea</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Rwanda</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Tanzania</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item row="1" column="1" colspan="2">
-       <widget class="RoastSlider" name="slider_roast">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+        <property name="text">
+         <string>Grind Level</string>
         </property>
        </widget>
       </item>
@@ -552,6 +547,146 @@
         </item>
        </widget>
       </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_water">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Water</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QComboBox" name="comboBox_dosage">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>g</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ml</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QComboBox" name="comboBox_water">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>g</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ml</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="RoastSlider" name="slider_roast">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDoubleSpinBox" name="spinBox_dosage"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spinBox_age">
+        <property name="specialValueText">
+         <string notr="true"/>
+        </property>
+        <property name="correctionMode">
+         <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_dosage">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Dosage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QComboBox" name="comboBox_region">
+        <item>
+         <property name="text">
+          <string>Blend</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Africa</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Asia</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Central America</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>South America</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Other</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="spinBox_water">
+        <property name="maximum">
+         <double>999.990000000000009</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_age">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Bean Age</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </item>
@@ -577,6 +712,11 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qchartview.h</header>
+  </customwidget>
+  <customwidget>
    <class>RoastSlider</class>
    <extends>QSlider</extends>
    <header location="global">components/roastslider.h</header>
@@ -585,11 +725,6 @@
    <class>BrewTimer</class>
    <extends>QLabel</extends>
    <header location="global">components/brewtimer.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QChartView</class>
-   <extends>QGraphicsView</extends>
-   <header location="global">qchartview.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

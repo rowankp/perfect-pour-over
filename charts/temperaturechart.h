@@ -13,6 +13,7 @@ class TemperatureChart : public QChart
 
     public slots:
         void updateChart(int time, double value);
+        void clear();
 
     private:
         QValueAxis _x;

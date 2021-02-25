@@ -27,7 +27,7 @@ void DummyData::createData()
 {
     int time = _timer->elapsed() / 1000;
     double pH = (rand() % 12 + 1);
-    double temp = (rand() % 200 + 60);
+    double temp = (rand() % 150 + 60);
 
     emit sendData(time, pH, temp);
 }

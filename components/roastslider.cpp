@@ -1,4 +1,5 @@
 #include "roastslider.h"
+
 #include <QPainter>
 #include <QStyleOptionSlider>
 #include <QStyle>

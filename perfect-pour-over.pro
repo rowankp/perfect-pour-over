@@ -24,13 +24,13 @@ SOURCES += \
     components/tastingwheelwidget.cpp \
     components/viewbrewswidget.cpp \
     components/viewbutton.cpp \
+    database/brewsuggestion.cpp \
     database/databasemanager.cpp \
     main.cpp \
     mainwindow.cpp \
     simulation/dummydata.cpp
 
 HEADERS += \
-    brewdatastructure.h \
     charts/livechart.h \
     charts/phchart.h \
     charts/temperaturechart.h \
@@ -43,7 +43,10 @@ HEADERS += \
     components/tastingwheelwidget.h \
     components/viewbrewswidget.h \
     components/viewbutton.h \
+    database/brewdatastructure.h \
+    database/brewsuggestion.h \
     database/databasemanager.h \
+    global.h \
     mainwindow.h \
     simulation/dummydata.h
 

@@ -1,8 +1,9 @@
 #ifndef VIEWBUTTON_H
 #define VIEWBUTTON_H
 
+#include "global.h"
+
 #include <QPushButton>
-#include "brewdatastructure.h"
 
 class ViewButton : public QPushButton
 {

@@ -1,7 +1,6 @@
 #include "tastingwheelwidget.h"
 #include "ui_tastingwheelwidget.h"
 
-
 TastingWheelWidget::TastingWheelWidget(QWidget *parent) :
     QWidget(parent),
     _ui(new Ui::TastingWheelWidget)

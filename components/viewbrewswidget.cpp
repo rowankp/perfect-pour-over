@@ -22,6 +22,11 @@ ViewBrewsWidget::ViewBrewsWidget(QWidget *parent) : QWidget(parent), _ui(new Ui:
     connect(_ui->button_roasts, &ViewButton::type, this, &ViewBrewsWidget::showAverage);
     connect(_ui->button_temperature, &ViewButton::type, this, &ViewBrewsWidget::showAverage);
     connect(_ui->button_times, &ViewButton::type, this, &ViewBrewsWidget::showAverage);
+    connect(_ui->dateEdit_start, &QDateEdit::dateChanged, this, &ViewBrewsWidget::startDate);
+    connect(_ui->dateEdit_end, &QDateEdit::dateChanged, this, &ViewBrewsWidget::endDate);
+
+    _start = _ui->dateEdit_start->date().toString("MM-dd-yyyy");
+    _end = _ui->dateEdit_end->date().toString("MM-dd-yyyy");
 }
 
 ViewBrewsWidget::~ViewBrewsWidget()
@@ -31,7 +36,7 @@ ViewBrewsWidget::~ViewBrewsWidget()
 
 void ViewBrewsWidget::showIndividual()
 {
-    QWidget *to = new IndividualView();
+    QWidget *to = new IndividualView(_start, _end, _ui->radioButton_allData->isChecked());
 
     if (_ui->widget_view->layout()->itemAt(0) != nullptr)
     {
@@ -47,7 +52,7 @@ void ViewBrewsWidget::showIndividual()
 
 void ViewBrewsWidget::showAverage(VIEW type)
 {
-    QWidget *to = new AveragesView(type);
+    QWidget *to = new AveragesView(type, _start, _end, _ui->radioButton_allData->isChecked());
 
     if (_ui->widget_view->layout()->itemAt(0) != nullptr)
     {
@@ -59,4 +64,14 @@ void ViewBrewsWidget::showAverage(VIEW type)
     {
         _ui->widget_view->layout()->addWidget(to);
     }
+}
+
+void ViewBrewsWidget::startDate(const QDate &date)
+{
+    _start = date.toString("MM-dd-yyyy");
+}
+
+void ViewBrewsWidget::endDate(const QDate &date)
+{
+    _end = date.toString("MM-dd-yyyy");
 }

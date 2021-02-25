@@ -16,9 +16,15 @@
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <widget class="QFrame" name="frame_buttons">
+     <property name="minimumSize">
+      <size>
+       <width>175</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>265</width>
+       <width>175</width>
        <height>16777215</height>
       </size>
      </property>
@@ -30,6 +36,121 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QGroupBox" name="groupBox_date">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>95</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Date Range</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_start">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDateEdit" name="dateEdit_start">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2021</year>
+             <month>2</month>
+             <day>19</day>
+            </datetime>
+           </property>
+           <property name="currentSection">
+            <enum>QDateTimeEdit::MonthSection</enum>
+           </property>
+           <property name="displayFormat">
+            <string>MM-dd-yyyy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_end">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>End</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="dateEdit_end">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2021</year>
+             <month>2</month>
+             <day>21</day>
+            </datetime>
+           </property>
+           <property name="currentSection">
+            <enum>QDateTimeEdit::MonthSection</enum>
+           </property>
+           <property name="displayFormat">
+            <string>MM-dd-yyyy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QRadioButton" name="radioButton_allData">
+           <property name="text">
+            <string>All Brewing Data</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="button_individual">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -39,13 +160,13 @@
         </property>
         <property name="minimumSize">
          <size>
-          <width>245</width>
-          <height>23</height>
+          <width>0</width>
+          <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -58,13 +179,13 @@
        <widget class="ViewButton" name="button_ratings">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -77,13 +198,13 @@
        <widget class="ViewButton" name="button_roasts">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -96,13 +217,13 @@
        <widget class="ViewButton" name="button_regions">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -115,13 +236,13 @@
        <widget class="ViewButton" name="button_temperature">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -134,13 +255,13 @@
        <widget class="ViewButton" name="button_acidity">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -153,13 +274,13 @@
        <widget class="ViewButton" name="button_dosages">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -172,13 +293,13 @@
        <widget class="ViewButton" name="button_times">
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -197,13 +318,13 @@
         </property>
         <property name="minimumSize">
          <size>
-          <width>245</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>245</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>

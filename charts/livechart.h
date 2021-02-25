@@ -11,6 +11,7 @@ class LiveChart : public QChart
 
     public slots:
         void updateChart(int time, double pH, double temperature);
+        void clear();
 
     private:
         QValueAxis _x;

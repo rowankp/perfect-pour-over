@@ -17,14 +17,16 @@ struct BrewData
     int run_id = -1;
     QString run = "NULL";
     QString region = "NULL";
-    int     roast = -1;
-    int     age = -1;
-    int     grind = -1;
-    double  water = -1;
-    double  dosage = -1;
+    int roast = -1;
+    int age = -1;
+    int grind = -1;
+    double water = -1;
+    double dosage = -1;
     vector<double> temperature;
     vector<double> pH;
     QString brew_time = "NULL";
+    int elapsed = - 1;
+    int rating = 1;
 };
 
 enum VIEW

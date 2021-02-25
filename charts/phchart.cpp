@@ -33,3 +33,8 @@ void pHChart::updateChart(int time, double value)
 
     _data.append(time, value);
 }
+
+void pHChart::clear()
+{
+    _data.clear();
+}
