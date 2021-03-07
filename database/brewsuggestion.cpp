@@ -189,7 +189,6 @@ QString BrewSuggestion::summary()
             break;
         case TEMPERATURE::Hot:
             ret.append("\nTemperature: \n");
-            ret.append("Temperature: \n");
             ret.append("   - Consider brewing with cooler water, you may be scalding your beans.\n");
             ret.append(QString("     Your coffee temperature was %1. Optimal water temperature is between 175°F and 190°F.\n").arg(_temperatureFlag));
             break;
@@ -200,7 +199,7 @@ QString BrewSuggestion::summary()
         case ACIDITY::Acidic:
             ret.append("\nAcidity: \n");
             ret.append("   - Your coffee is too acidic! Consider adusting your grind or brewing ratio. Your coffee pH\n");
-            ret.append(QString("     was %1.The expected pH of coffee is between 4.85 and 5.10.\n").arg(_ph));
+            ret.append(QString("     was %1.The expected pH of coffee is between 4.85 and 5.10.").arg(_ph));
             break;
         case ACIDITY::Watery:
             ret.append("\nAcidity: \n");
